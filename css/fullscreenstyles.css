@@ -1,0 +1,321 @@
+html{
+    background-color: rgb(18, 18, 18);
+    overflow: hidden;
+}
+h1 {
+    color:rgb(255, 255, 255);
+    mix-blend-mode:difference;
+    position: relative;
+    bottom: 1100px;
+    text-align: right;
+    margin-right: 1%;
+    font-size: 100px;
+    font-family: urw-din, sans-serif;
+    font-weight:500;
+    font-style:normal;
+    margin-bottom: -0.5%;
+}
+
+h2 {
+    color:rgb(255, 255, 255);
+    mix-blend-mode:difference;
+    position: relative;
+    bottom: 1100px;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 1%;
+    font-family: urw-din, sans-serif;
+    font-weight:100;
+    font-style:italic;
+}
+
+
+
+#allcontrols{
+    position: relative;
+    bottom: 510px;
+}
+
+.videobox{
+    /* margin-left: 1%;
+    margin-bottom: 1%; */
+    width:auto;
+    position:relative;
+    right: 20px;
+    background-color: rgb(18, 18, 18);
+    /* border-radius: 10px; */
+}
+
+.vidcontrols{
+    width: 100px;
+    height: 50px;
+    font-family: urw-din, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 10px;
+    background-color: #cfcfcfd1;
+    color:rgb(0, 0, 0);
+}
+
+#homebutton{
+    position: absolute;
+    bottom: 1075px;
+}
+
+.instrument{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgba(66, 66, 66, 0.498);
+    border-radius: 10px;
+}
+
+.instrument:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 115, 255, 0.618);
+    transition: all .5s;
+}
+
+/* .vide0{
+  overflow: hidden;
+} */
+
+#firstVid{
+    position: absolute;
+    mix-blend-mode:screen;
+    /* border-width: 2px; */
+    /* border-radius: 10px; */
+}
+
+#secondVid{
+    position: absolute;
+    mix-blend-mode:difference;   
+    /* border-radius: 10px; */
+}
+
+#thirdVid{
+    position: absolute;
+    mix-blend-mode: difference;
+    /* border-radius: 10px; */
+}
+
+#fourthVid{
+    position:absolute;
+    mix-blend-mode: difference;
+    /* border-radius: 10px; */
+}
+
+#fifthVid{
+    mix-blend-mode:difference;
+    /* border-style:solid;
+    border-color: white;
+    border-radius: 10px; */
+    
+}
+#instrumentsandbutton{
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* left: 0px; */
+    bottom: 593px;
+    width: 500px;
+    height: 518px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 1px;
+    /* border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px; */
+    margin: auto;
+    margin-right: 0.5%;
+}
+
+.instrumentword{
+    position: relative;
+    top: 90%;
+    font-family: urw-din, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  color: white;
+}
+
+
+.slider{
+    transform: rotate(270deg);
+    position: relative;
+    right: 160px;
+    top: 130px;
+
+}
+
+.switch{
+  position: relative;
+  top: 385px;
+  width: 20px;
+  height: 20px;
+}
+
+/*.switch:checked{
+    mix-blend-mode:luminosity;
+}*/
+
+#controlbox{
+    position: relative;
+    left: 200px;
+    bottom: 600px;
+    margin: auto;
+    width: 700px;
+    /* background-color: rgba(0, 242, 255, 0.828); */
+    border-radius: 10px;
+    margin-right: 0.5%;
+}
+
+
+input[type=range] {
+    width: 400px;
+    margin: 8.9px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    background: rgb(0, 0, 0, 0.2);
+    border: 2px solid #00373200;
+    width: 100%;
+    height: 12.2px;
+    cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -10.9px;
+    width: 50px;
+    height: 30px;
+    background: #cfcfcf;
+    border: 2px solid #000000;
+    /* border: 0; */
+    border-radius: 9px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgb(0, 0, 0, 0.2);
+  }
+  input[type=range]::-moz-range-track {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid #00373200;
+    width: 100%;
+    height: 12.2px;
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 50px;
+    height: 30px;
+    background: #cfcfcf;
+    border: 2px solid #000000;
+    /* border: 0; */
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 8.9px 0;
+    color: transparent;
+    width: 100%;
+    height: 12.2px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: rgb(0, 183, 156);
+    border: 2px solid #00373200;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: rgb(0, 183, 156);
+    border: 2px solid #00373200;
+  }
+  input[type=range]::-ms-thumb {
+    width: 50px;
+    height: 30px;
+    background: #cfcfcf;
+    border: 2px solid #000000;
+    /* border: 0; */
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: rgb(0, 255, 217);
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: rgb(0, 255, 217);
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+
+
+
+
+/* STARTPAGE */
+
+
+
+.album{
+  color: white;
+  background-color: rgb(18, 18, 18);
+  font-family: urw-din, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  width:200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 150px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 10px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allalbums{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.album:hover{
+  background-color: rgba(0, 238, 255, 0.513);
+  transition: all .5s;
+}
+
+a:visited{
+  color:rgb(0, 255, 217) ;
+}
+
+#homebutton{
+  position: relative;
+
+}
+
+#homebutton:hover{
+  background-color: rgba(0, 238, 255, 0.732);
+  color: rgb(0, 60, 255);
+  transition: all .5s;
+}
+

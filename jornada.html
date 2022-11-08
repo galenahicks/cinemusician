@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Jornada
+    </title>
+    <link rel="stylesheet" href="https://use.typekit.net/fxr5gan.css">
+    <link rel="stylesheet" href="css/fullscreenstyles.css">
+    <script type="text/javascript" src="javascript/rmusic.js"></script>  
+    <div class="videobox">
+        <!-- <video  class="vide0" id="firstVid" width="1024" height="576">
+        <source src= "content/fingerstyle.mp4"></video> 
+    
+        <video  class="vide0" id="secondVid" width="1024" height="576">
+            <source src= "content/drums.mp4"></video> 
+    
+        <video  class="vide0" id="thirdVid" width="1024" height="576">
+            <source src= "content/chords.mp4"></video> 
+        
+        <video  class="vide0" id="fourthVid" width="1024" height="576">
+            <source src= "content/singlestring.mp4"></video> 
+    
+        <video  class="vide0" id="fifthVid" width="1024" height="576">
+            <source src= "content/voice.mp4"></video>  -->
+        
+        <video  class="vide0" id="firstVid" width="1920" height="1080" loop>
+                <source src= "content/jornadabells.mp4"></video> 
+            
+                <video  class="vide0" id="secondVid" width="1920" height="1080" loop>
+                    <source src= "content/jornadadrums.mp4"></video> 
+            
+                <video  class="vide0" id="thirdVid" width="1920" height="1080" loop>
+                    <source src= "content/jornadakeys.mp4"></video> 
+                
+                <video  class="vide0" id="fourthVid" width="1920" height="1080" loop>
+                    <source src= "content/jornadastrings.mp4"></video> 
+            
+                <video  class="vide0" id="fifthVid" width="1920" height="1080" loop>
+                    <source src= "content/jornadavox.mp4"></video> 
+    </div>
+
+    <a href="startpageV2.html">
+        <button class="vidcontrols" id="homebutton" >
+               home  
+         </button>
+        </a>
+    <a href="worstpartfullscreen.html">
+        <button class="vidcontrols" id="homebutton" >
+            &#10094; last song 
+         </button>
+        </a>
+
+    <a href="r3fl3ctions.html">
+        <button class="vidcontrols" id="homebutton" >
+               next song &#10095;  
+         </button>
+        </a>
+<h1>Jornada/Mago Freestyle</h1>
+<h2>AUBREY, 2021</h2>
+
+
+
+</head>
+
+<body>
+    <header>
+      
+    </header>
+    <main>
+
+<div id="allcontrols">
+
+
+<div id="controlbox">
+<button onclick="playPause1();playPause2();playPause3();playPause4();playPause5();" class="vidcontrols" id="playbutton">
+    play/pause
+ </button>
+ <button class="vidcontrols" id="reloadbutton" onclick="window.location.href=window.location.href">
+    reload
+ </button>
+</div>
+
+<div id="instrumentsandbutton">
+    <div class="instrument" id="fingerstylebox">
+    <p class="instrumentword">bells</p>
+    <input type="checkbox" class="switch" id="fingerstylecheck" checked disabled>
+    <input type="range" min="0" max="100" value="100" class="slider" id="fingerstyleslider" onclick="volumeSlide1();">
+    </div>
+
+    <div class="instrument">
+        <p class="instrumentword" id="drumsbox">drums</p>
+        <input type="checkbox" class="switch" id="drumcheck" checked disabled>
+        <input type="range" min="0" max="100" value="100" class="slider" id="drumslider" onclick="volumeSlide2();">
+        </div>
+        
+    <div class="instrument">
+        <p class="instrumentword" id="chordsbox">keys</p>
+        <input type="checkbox" class="switch" id="chordscheck" checked disabled>
+        <input type="range" min="0" max="100" value="100" class="slider" id="chordsslider" onclick="volumeSlide3();">
+        </div>
+
+    <div class="instrument">
+        <p class="instrumentword" id="stringbox">strings</p>
+        <input type="checkbox" class="switch" id="stringcheck" checked disabled>
+        <input type="range" min="0" max="100" value="100" class="slider" id="stringslider" onclick="volumeSlide4();">
+        </div>
+
+    <div class="instrument">
+        <p class="instrumentword" id="vocalsbox">vocals</p>
+        <input type="checkbox" class="switch" id="vocalscheck" checked disabled>
+        <input type="range" min="0" max="100" value="100" class="slider" id="vocalsslider" onclick="volumeSlide5();">
+        </div>
+
+
+</div>
+</div>
+
+    </main>
+</body>
+</html>
